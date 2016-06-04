@@ -1,0 +1,25 @@
+{
+  "name": "react_express_example",
+  "description": "React and Express Example",
+  "main": "index.js",
+  "authors": [
+    "Tharaka Romesh"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "React",
+    "Express",
+    "MongoDB"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.1.0"
+  }
+}

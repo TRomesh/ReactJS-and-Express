@@ -1,0 +1,34 @@
+{
+  "name": "react_express_example",
+  "version": "1.0.0",
+  "description": "React and Express Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRomesh/ReactJS-and-Express.git"
+  },
+  "keywords": [
+    "React",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Tharaka Romesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TRomesh/ReactJS-and-Express/issues"
+  },
+  "homepage": "https://github.com/TRomesh/ReactJS-and-Express#readme",
+  "dependencies": {
+    "browser-sync": "^2.12.10",
+    "browserify": "^13.0.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.29",
+    "react": "^15.1.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
