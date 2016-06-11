@@ -1,4 +1,5 @@
-var React = require('react/addons');
+var React = require('react');
+var ReactDOM = require('react-dom');
 
 var comp1 = React.createClass({
     render:function (){
@@ -10,4 +11,4 @@ var comp1 = React.createClass({
     }
 });
 
-module.exports = comp1; 
+module.exports = comp1;

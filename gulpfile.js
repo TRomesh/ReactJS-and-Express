@@ -18,13 +18,13 @@ gulp.task('bundle',function (){
     .transform(reactify)
     .bundle()
     .pipe(source('app.js'))
-    .pipe(gulp.dest('./tmp'));
-    
+    .pipe(gulp.dest('./temp'));
+
 })
 
-gulp.task('serve',['live-server'],function (){
+gulp.task('serve',['bundle','live-server'],function (){
     browserSync.init(null,{
-        proxy:"http://localhost:3111",
-        port:3122
+        proxy:"http://localhost:3122",
+        port:3111
     })
 })
