@@ -15,4 +15,4 @@ var initial = [{
     name:"Snaks"
 }];
 
-ReactDOM.render(<GroceryItemList/>,app);
+ReactDOM.render(<GroceryItemList items={initial}/>,app);
