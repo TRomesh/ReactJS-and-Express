@@ -7,7 +7,7 @@ module.exports = {
     listners[id] = callback;
     return id;
   },
-  dispatcher:function (payload) {
+  dispatch:function (payload) {
     console.info("Dispatching...",payload);
 
     for(var id in listners){

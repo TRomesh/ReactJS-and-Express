@@ -6,13 +6,17 @@ console.log('Hi');
 var GroceryItemList = require('./components/GroceryItemList.jsx');
 
 var initial = [{
-    name:"Ice Cream"
+    name:"Ice Cream",
+    purchased: true
 },{
-    name:"Waffles"
+    name:"Waffles",
+    purchased: false
 },{
-    name:"Candy"
+    name:"Candy",
+    purchased: true
 },{
-    name:"Snaks"
+    name:"Snaks",
+    purchased: false
 }];
 
 ReactDOM.render(<GroceryItemList items={initial}/>,app);

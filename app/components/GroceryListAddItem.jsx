@@ -12,3 +12,5 @@ var GroceryListAddItem = React.createClass({
       )
     }
 });
+
+module.exports = GroceryListAddItem;
