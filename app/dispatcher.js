@@ -1,19 +1,17 @@
 var guid = require('guid');
-var listners = {};
+var listeners = {};
 
 module.exports = {
-  register:function (cd) {
-    var id : guid.raw();
-    listners[id] = callback;
-    return id;
-  },
-  dispatch:function (payload) {
-    console.info("Dispatching...",payload);
-
-    for(var id in listners){
-       var listner = listners[id];
-       listner(payload);
+    register:function(cb){
+        var id = guid.raw();
+        listeners[id] = cb;
+        return id;
+    },
+    dispatch:function(payload){
+        console.info("Dispatching...",payload);
+        for (var id in listeners){
+            var listener = listeners[id];
+            listener(payload);
+        }
     }
-  }
-
 }
