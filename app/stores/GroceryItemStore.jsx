@@ -1,7 +1,7 @@
 var dispatcher = require('./../dispatcher.js');
 
 function GroceryItemStore() {
-        var items = [];
+        var items = [{name:"Tharaka"},{name:"Madushika"},{name:"Kasun"}];
         var listeners = [];
 
 
@@ -12,6 +12,18 @@ function GroceryItemStore() {
         function addGroceryItem(item){
            items.push(item);
            triggerListners();
+        }
+
+        function deleteGroceryItem(item) {
+            var index;
+             items.filter(function(_item,_index){
+               if (_item.name == item.name){
+                  index = _index;
+               }
+
+            });
+            items.splice(index,1);
+            triggerListners();
         }
 
         function onChange(listener){
@@ -30,6 +42,9 @@ function GroceryItemStore() {
              switch (split[1]) {
                case "add":
                   addGroceryItem(event.payload);
+                 break;
+               case "delete":
+                  deleteGroceryItem(event.payload);
                  break;
                default:
 
