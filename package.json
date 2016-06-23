@@ -23,11 +23,13 @@
   },
   "homepage": "https://github.com/TRomesh/ReactJS-and-Express#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "browser-sync": "^2.12.10",
     "browserify": "^13.0.1",
     "express": "^4.13.4",
     "gulp": "^3.9.1",
     "gulp-live-server": "0.0.29",
+    "jquery": "^3.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "reactify": "^1.1.1",
